@@ -1,0 +1,29 @@
+kind: Deployement
+apiVersion: apps/v1
+metadata:
+  name: cbs-deployment
+  # namespace:  // specify namespace if needed
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: cbs
+  template:
+    metadata:
+      labels:
+        app: cbs
+    spec:
+      containers:
+        - name: cbs
+          image: cbs:latest  # Change the Images Name Later
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING.KAFAKA.BOOTSTRAP-SERVERS
+              value: "kafka-service:9092" # Kafka Service Address
+            - name: SPRING.DATASOURCE.URL
+              value: "jdbc:mysql://mysql-service:3306/aies_db" # MySQL Service Address AWS RDS Endpoint can be used here
+            - name: SPRING.DATASOURCE.USERNAME
+              value : "aies_user" # MySQL Username Iam Username
+            - name: SPRING.DATASOURCE.PASSWORD
+              value : "aies_password" # MySQL Password Passing the HarderCoded Values here for Testing Purpose Only. Use Secrets in Production.

@@ -1,0 +1,29 @@
+kind: Deployement
+apiVersion: apps/v1
+metadata:
+  name: aies-deployment
+  # namespace:  // specify namespace if needed
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aies
+  template:
+    metadata:
+      labels:
+        app: aies
+    spec:
+      containers:
+        - name: aies
+          image: aies:latest # Change the Images Name Later 
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING.KAFAKA.BOOTSTRAP-SERVERS
+              value: "kafka-service:9092" # Kafka Service Address
+            - name: SPRING.DATASOURCE.URL
+              value: "jdbc:mysql://mysql-service:3306/aies_db" # MySQL Service Address
+            - name: SPRING.DATASOURCE.USERNAME
+              value : "aies_user" # MySQL Username
+            - name: SPRING.DATASOURCE.PASSWORD
+              value : "aies_password" # MySQL Password Passing the HarderCoded Values here for Testing Purpose Only. Use Secrets in Production. 

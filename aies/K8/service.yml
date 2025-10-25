@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: aies-service
+  # namespace:  // specify namespace if needed
+spec:
+  selector:
+    app: aies
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8081
+  type: LoadBalancer
