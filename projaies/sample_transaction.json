@@ -1,0 +1,904 @@
+{
+  "currentTransctionEvent": {
+    "id": "14e283a6-453b-4406-b3ed-62ffd749ce0b",
+    "paymentInfo": {
+      "id": "PAY-14e283a6",
+      "instructionId": "INST-14e283a6",
+      "instructedAmount": {
+        "id": "AMT-14e283a6",
+        "currency": "INR",
+        "amount": 86454
+      }
+    },
+    "debtor": {
+      "id": "DEBTOR-14e283a6",
+      "name": "TEST-14e283a6",
+      "account": {
+        "id": "CUST24680",
+        "scheme": "CUSTOMER-ID"
+      }
+    },
+    "creditor": {
+      "id": "CREDITOR-14e283a6",
+      "name": "test-14e283a6",
+      "account": {
+        "id": "CUST12345",
+        "scheme": "CUSTOMER-ID"
+      }
+    },
+    "remittanceInfo": {
+      "id": "REM-14e283a6",
+      "unstructured": "Thigzgsg"
+    },
+    "transactionDate": 1760377364.753153,
+    "flaged": false,
+    "reason": null
+  },
+  "modelDebtor": {
+    "debtor": {
+      "id": "DEBTOR-14e283a6",
+      "name": "TEST-14e283a6",
+      "account": {
+        "id": "CUST24680",
+        "scheme": "CUSTOMER-ID"
+      }
+    },
+    "last10TransctionEventsDebits": [
+      {
+        "id": "14e283a6-453b-4406-b3ed-62ffd749ce0b",
+        "paymentInfo": {
+          "id": "PAY-14e283a6",
+          "instructionId": "INST-14e283a6",
+          "instructedAmount": {
+            "id": "AMT-14e283a6",
+            "currency": "INR",
+            "amount": 86454
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-14e283a6",
+          "name": "TEST-14e283a6",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-14e283a6",
+          "name": "test-14e283a6",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-14e283a6",
+          "unstructured": "Thigzgsg"
+        },
+        "transactionDate": 1760377364.753153,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "dfa65692-ea80-49c3-95c0-cc070c3a48c1",
+        "paymentInfo": {
+          "id": "PAY-dfa65692",
+          "instructionId": "INST-dfa65692",
+          "instructedAmount": {
+            "id": "AMT-dfa65692",
+            "currency": "INR",
+            "amount": 655
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-dfa65692",
+          "name": "TEST-dfa65692",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-dfa65692",
+          "name": "test-dfa65692",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-dfa65692",
+          "unstructured": "Vvsh"
+        },
+        "transactionDate": 1760374157.191742,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "7b197223-83b8-4ace-862a-c1e8c48e2610",
+        "paymentInfo": {
+          "id": "PAY-7b197223",
+          "instructionId": "INST-7b197223",
+          "instructedAmount": {
+            "id": "AMT-7b197223",
+            "currency": "INR",
+            "amount": 5354
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-7b197223",
+          "name": "TEST-7b197223",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-7b197223",
+          "name": "test-7b197223",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-7b197223",
+          "unstructured": "Vishs"
+        },
+        "transactionDate": 1760374149.708486,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "4007a42c-c43f-4626-a1f2-b3d5846f34cc",
+        "paymentInfo": {
+          "id": "PAY-4007a42c",
+          "instructionId": "INST-4007a42c",
+          "instructedAmount": {
+            "id": "AMT-4007a42c",
+            "currency": "INR",
+            "amount": 500
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-4007a42c",
+          "name": "TEST-4007a42c",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-4007a42c",
+          "name": "test-4007a42c",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-4007a42c",
+          "unstructured": "Tets"
+        },
+        "transactionDate": 1760374032.47303,
+        "flaged": true,
+        "reason": null
+      },
+      {
+        "id": "3",
+        "paymentInfo": {
+          "id": "PAY-003",
+          "instructionId": "TXN-ID-ABC-125",
+          "instructedAmount": {
+            "id": "AMT-003",
+            "currency": "INR",
+            "amount": 120000
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-003",
+          "name": "Arjun Mehta",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-002",
+          "name": "Mumbai University",
+          "account": {
+            "id": "mumbai.university@hdfcbank",
+            "scheme": "HDFCBANK"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REMIT-003",
+          "unstructured": "Hostel Room Rent - Block B, Student ID 3421"
+        },
+        "transactionDate": 1759994100,
+        "flaged": true,
+        "reason": null
+      }
+    ],
+    "last10TransctionEventsCredits": []
+  },
+  "modelCreditor": {
+    "creditor": {
+      "id": "CREDITOR-14e283a6",
+      "name": "test-14e283a6",
+      "account": {
+        "id": "CUST12345",
+        "scheme": "CUSTOMER-ID"
+      }
+    },
+    "last10TransctionEventsDebits": [
+      {
+        "id": "3c5041db-634d-4847-a4b8-bf94973b2b6c",
+        "paymentInfo": {
+          "id": "PAY-3c5041db",
+          "instructionId": "INST-3c5041db",
+          "instructedAmount": {
+            "id": "AMT-3c5041db",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-3c5041db",
+          "name": "TEST-3c5041db",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-3c5041db",
+          "name": "test-3c5041db",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-3c5041db",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760262578.49609,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "9af330f8-f452-4cc2-a782-fb7996978f3f",
+        "paymentInfo": {
+          "id": "PAY-9af330f8",
+          "instructionId": "INST-9af330f8",
+          "instructedAmount": {
+            "id": "AMT-9af330f8",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-9af330f8",
+          "name": "TEST-9af330f8",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-9af330f8",
+          "name": "test-9af330f8",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-9af330f8",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760262455.593029,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "0589bd67-94b0-4690-a154-3e79b140a387",
+        "paymentInfo": {
+          "id": "PAY-0589bd67",
+          "instructionId": "INST-0589bd67",
+          "instructedAmount": {
+            "id": "AMT-0589bd67",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-0589bd67",
+          "name": "TEST-0589bd67",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-0589bd67",
+          "name": "test-0589bd67",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-0589bd67",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760262118.92868,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "ece96eed-adc3-4651-8fd9-8bb60f6ad9aa",
+        "paymentInfo": {
+          "id": "PAY-ece96eed",
+          "instructionId": "INST-ece96eed",
+          "instructedAmount": {
+            "id": "AMT-ece96eed",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-ece96eed",
+          "name": "TEST-ece96eed",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-ece96eed",
+          "name": "test-ece96eed",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-ece96eed",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760261755.498733,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "68ee683c-e169-42ff-b8e6-151a0a785296",
+        "paymentInfo": {
+          "id": "PAY-68ee683c",
+          "instructionId": "INST-68ee683c",
+          "instructedAmount": {
+            "id": "AMT-68ee683c",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-68ee683c",
+          "name": "TEST-68ee683c",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-68ee683c",
+          "name": "test-68ee683c",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-68ee683c",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760261640.546276,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "0f5c2bef-94cf-48f7-9709-6828c1f239d3",
+        "paymentInfo": {
+          "id": "PAY-0f5c2bef-",
+          "instructionId": "INST-0f5c2bef-",
+          "instructedAmount": {
+            "id": "AMT-0f5c2bef-",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-0f5c2bef-",
+          "name": "TEST-0f5c2bef-",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-0f5c2bef-",
+          "name": "test-0f5c2bef-",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-0f5c2bef-",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760261590.808246,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "bf8660f8-287e-47a0-94f0-f266137216b6",
+        "paymentInfo": {
+          "id": "PAY-bf8660f8-",
+          "instructionId": "INST-bf8660f8-",
+          "instructedAmount": {
+            "id": "AMT-bf8660f8-",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-bf8660f8-",
+          "name": "TEST-bf8660f8-",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-bf8660f8-",
+          "name": "test-bf8660f8-",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-bf8660f8-",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760261139.628192,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "5",
+        "paymentInfo": {
+          "id": "PAY-005",
+          "instructionId": "TXN-ID-ABC-127",
+          "instructedAmount": {
+            "id": "AMT-005",
+            "currency": "INR",
+            "amount": 90000
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-005",
+          "name": "Vikram Patel",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-001",
+          "name": "Pune Institute of Technology",
+          "account": {
+            "id": "pune.institute@icicibank",
+            "scheme": "ICICIBANK"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REMIT-005",
+          "unstructured": "Semester 6 Fees, Student ID 5567"
+        },
+        "transactionDate": 1760000400,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "1",
+        "paymentInfo": {
+          "id": "PAY-001",
+          "instructionId": "TXN-ID-ABC-123",
+          "instructedAmount": {
+            "id": "AMT-001",
+            "currency": "INR",
+            "amount": 140000
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-001",
+          "name": "Ramesh Kumar",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-001",
+          "name": "Pune Institute of Technology",
+          "account": {
+            "id": "pune.institute@icicibank",
+            "scheme": "ICICIBANK"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REMIT-001",
+          "unstructured": "Payment for Semester 5 Fees, Student ID 9876"
+        },
+        "transactionDate": 1759987800,
+        "flaged": false,
+        "reason": null
+      }
+    ],
+    "last10TransctionEventsCredits": [
+      {
+        "id": "14e283a6-453b-4406-b3ed-62ffd749ce0b",
+        "paymentInfo": {
+          "id": "PAY-14e283a6",
+          "instructionId": "INST-14e283a6",
+          "instructedAmount": {
+            "id": "AMT-14e283a6",
+            "currency": "INR",
+            "amount": 86454
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-14e283a6",
+          "name": "TEST-14e283a6",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-14e283a6",
+          "name": "test-14e283a6",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-14e283a6",
+          "unstructured": "Thigzgsg"
+        },
+        "transactionDate": 1760377364.753153,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "dfa65692-ea80-49c3-95c0-cc070c3a48c1",
+        "paymentInfo": {
+          "id": "PAY-dfa65692",
+          "instructionId": "INST-dfa65692",
+          "instructedAmount": {
+            "id": "AMT-dfa65692",
+            "currency": "INR",
+            "amount": 655
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-dfa65692",
+          "name": "TEST-dfa65692",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-dfa65692",
+          "name": "test-dfa65692",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-dfa65692",
+          "unstructured": "Vvsh"
+        },
+        "transactionDate": 1760374157.191742,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "7b197223-83b8-4ace-862a-c1e8c48e2610",
+        "paymentInfo": {
+          "id": "PAY-7b197223",
+          "instructionId": "INST-7b197223",
+          "instructedAmount": {
+            "id": "AMT-7b197223",
+            "currency": "INR",
+            "amount": 5354
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-7b197223",
+          "name": "TEST-7b197223",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-7b197223",
+          "name": "test-7b197223",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-7b197223",
+          "unstructured": "Vishs"
+        },
+        "transactionDate": 1760374149.708486,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "4007a42c-c43f-4626-a1f2-b3d5846f34cc",
+        "paymentInfo": {
+          "id": "PAY-4007a42c",
+          "instructionId": "INST-4007a42c",
+          "instructedAmount": {
+            "id": "AMT-4007a42c",
+            "currency": "INR",
+            "amount": 500
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-4007a42c",
+          "name": "TEST-4007a42c",
+          "account": {
+            "id": "CUST24680",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-4007a42c",
+          "name": "test-4007a42c",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-4007a42c",
+          "unstructured": "Tets"
+        },
+        "transactionDate": 1760374032.47303,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "3c5041db-634d-4847-a4b8-bf94973b2b6c",
+        "paymentInfo": {
+          "id": "PAY-3c5041db",
+          "instructionId": "INST-3c5041db",
+          "instructedAmount": {
+            "id": "AMT-3c5041db",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-3c5041db",
+          "name": "TEST-3c5041db",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-3c5041db",
+          "name": "test-3c5041db",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-3c5041db",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760262578.49609,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "9af330f8-f452-4cc2-a782-fb7996978f3f",
+        "paymentInfo": {
+          "id": "PAY-9af330f8",
+          "instructionId": "INST-9af330f8",
+          "instructedAmount": {
+            "id": "AMT-9af330f8",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-9af330f8",
+          "name": "TEST-9af330f8",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-9af330f8",
+          "name": "test-9af330f8",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-9af330f8",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760262455.593029,
+        "flaged": false,
+        "reason": null
+      },
+      {
+        "id": "0589bd67-94b0-4690-a154-3e79b140a387",
+        "paymentInfo": {
+          "id": "PAY-0589bd67",
+          "instructionId": "INST-0589bd67",
+          "instructedAmount": {
+            "id": "AMT-0589bd67",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-0589bd67",
+          "name": "TEST-0589bd67",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-0589bd67",
+          "name": "test-0589bd67",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-0589bd67",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760262118.92868,
+        "flaged": true,
+        "reason": null
+      },
+      {
+        "id": "ece96eed-adc3-4651-8fd9-8bb60f6ad9aa",
+        "paymentInfo": {
+          "id": "PAY-ece96eed",
+          "instructionId": "INST-ece96eed",
+          "instructedAmount": {
+            "id": "AMT-ece96eed",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-ece96eed",
+          "name": "TEST-ece96eed",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-ece96eed",
+          "name": "test-ece96eed",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-ece96eed",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760261755.498733,
+        "flaged": true,
+        "reason": null
+      },
+      {
+        "id": "68ee683c-e169-42ff-b8e6-151a0a785296",
+        "paymentInfo": {
+          "id": "PAY-68ee683c",
+          "instructionId": "INST-68ee683c",
+          "instructedAmount": {
+            "id": "AMT-68ee683c",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-68ee683c",
+          "name": "TEST-68ee683c",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-68ee683c",
+          "name": "test-68ee683c",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-68ee683c",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760261640.546276,
+        "flaged": true,
+        "reason": null
+      },
+      {
+        "id": "0f5c2bef-94cf-48f7-9709-6828c1f239d3",
+        "paymentInfo": {
+          "id": "PAY-0f5c2bef-",
+          "instructionId": "INST-0f5c2bef-",
+          "instructedAmount": {
+            "id": "AMT-0f5c2bef-",
+            "currency": "INR",
+            "amount": 13.34
+          }
+        },
+        "debtor": {
+          "id": "DEBTOR-0f5c2bef-",
+          "name": "TEST-0f5c2bef-",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "creditor": {
+          "id": "CREDITOR-0f5c2bef-",
+          "name": "test-0f5c2bef-",
+          "account": {
+            "id": "CUST12345",
+            "scheme": "CUSTOMER-ID"
+          }
+        },
+        "remittanceInfo": {
+          "id": "REM-0f5c2bef-",
+          "unstructured": "test PAy"
+        },
+        "transactionDate": 1760261590.808246,
+        "flaged": true,
+        "reason": null
+      }
+    ]
+  }
+}
