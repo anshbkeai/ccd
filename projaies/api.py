@@ -9,6 +9,7 @@ import threading
 import pickle
 import json
 import numpy as np
+import os
 from kafka import KafkaProducer, KafkaConsumer
 from typing import Dict, List, Optional
 
@@ -20,10 +21,21 @@ from feature_pipeline import transform_json_to_model_input
 from typing import Dict, Any
 
 
+# Kafka Configuration from Environment Variables
+KAFKA_BOOTSTRAP_SERVERS = os.getenv('KAFKA_BOOTSTRAP_SERVERS', 'localhost:9092').split(',')
+KAFKA_CONSUMER_TOPIC = os.getenv('KAFKA_CONSUMER_TOPIC', 'model-txn')
+KAFKA_PRODUCER_TOPIC = os.getenv('KAFKA_PRODUCER_TOPIC', 'model-resp-txn')
+KAFKA_CONSUMER_GROUP = os.getenv('KAFKA_CONSUMER_GROUP', 'my-group')
+
 app = FastAPI(title="Fraud Detection API", version="1.0")
 # Load the trained models and scaler
 model = joblib.load("models/fraud_detection_model.pkl")
 scaler = joblib.load("models/scaler.pkl")
+
+@app.get("/health")
+def health_check():
+    """Health check endpoint for AWS ECS"""
+    return {"status": "healthy", "service": "fraud-detection-api"}
 
 
 class Transaction(BaseModel):
@@ -303,18 +315,18 @@ def predict_real_world(transaction_json: Dict[Any, Any]):
 
 
 producer = KafkaProducer(
-    bootstrap_servers=['localhost:9092'],
+    bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
 def consume_and_predict():
     consumer = KafkaConsumer(
-        'model-txn',
-        bootstrap_servers=['localhost:9092'],
+        KAFKA_CONSUMER_TOPIC,
+        bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
         value_deserializer=lambda v: json.loads(v.decode('utf-8')),
-        group_id='my-group',
+        group_id=KAFKA_CONSUMER_GROUP,
     )
-    print("🚀 Kafka consumer started and listening to 'model-txn'...")
+    print(f"🚀 Kafka consumer started and listening to '{KAFKA_CONSUMER_TOPIC}'...")
 
     for msg in consumer:
         transaction = msg.value
@@ -368,7 +380,7 @@ def consume_and_predict():
         event = transaction['currentTransctionEvent']
         event['transactionDate'] = datetime.now(timezone.utc).isoformat()
 
-        producer.send('model-resp-txn', value=event)
+        producer.send(KAFKA_PRODUCER_TOPIC, value=event)
 
 
 @app.on_event("startup")
