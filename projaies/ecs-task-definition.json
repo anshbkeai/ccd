@@ -1,0 +1,53 @@
+{
+  "family": "fraud-detection-api",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048",
+  "containerDefinitions": [
+    {
+      "name": "fraud-detection-container",
+      "image": "<YOUR_ECR_REPOSITORY_URI>:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "KAFKA_BOOTSTRAP_SERVERS",
+          "value": "your-kafka-broker-1:9092,your-kafka-broker-2:9092"
+        },
+        {
+          "name": "KAFKA_CONSUMER_TOPIC",
+          "value": "model-txn"
+        },
+        {
+          "name": "KAFKA_PRODUCER_TOPIC",
+          "value": "model-resp-txn"
+        },
+        {
+          "name": "KAFKA_CONSUMER_GROUP",
+          "value": "fraud-detection-group"
+        }
+      ],
+      "healthCheck": {
+        "command": ["CMD-SHELL", "curl -f http://localhost:8000/health || exit 1"],
+        "interval": 30,
+        "timeout": 5,
+        "retries": 3,
+        "startPeriod": 40
+      },
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/fraud-detection-api",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
